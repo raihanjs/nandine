@@ -1,0 +1,905 @@
+/*====================================================================Common CSSS
+=================================================================================*/
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+img {
+    vertical-align: middle;
+}
+
+ul,
+li {
+    list-style-type: none;
+}
+
+a:hover,
+a {
+    text-decoration: none;
+}
+
+h1 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 63px;
+    color: #fff;
+}
+
+h1 span {
+    color: #ff0000;
+}
+
+h2 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 38px;
+    color: #000;
+    text-transform: uppercase;
+}
+
+h2 span {
+    color: #ff0000;
+}
+
+h3 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+    color: #ffffff;
+    text-transform: capitalize;
+}
+
+h4 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 26px;
+    color: #666666;
+    text-transform: capitalize;
+}
+
+h5 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+h6 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #333333;
+    text-transform: capitalize;
+}
+
+a {
+    font-family: 'Raleway', sans-serif;
+}
+
+.btn {
+    padding: 15px 35px;
+    background: #ff0000;
+    display: inline-block;
+    border: 0;
+    border-radius: 0;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    color: #fff;
+    font-size: 17px;
+    transition: 0.3s;
+    position: relative;
+}
+
+.btn:hover::after {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 20%;
+    content: '';
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.btn:hover {
+    color: #fff;
+}
+
+
+p {
+    font-family: 'Raleway',
+        sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+li,
+a,
+p,
+.navbar,
+.nav-link,
+.nav-item{
+    margin: 0;
+    padding: 0;
+}
+
+.section_padding {
+    padding: 90px 0px;
+}
+
+.section_header h2 {
+    position: relative;
+}
+
+.section_header h2::after {
+    position: absolute;
+    content: '';
+    top: 100%;
+    left: 50%;
+    transform:
+        translateX(-50%);
+    height: 2px;
+    width: 165px;
+    background: #ff0000;
+    margin-top: 10px;
+}
+
+.section_header h2::before {
+    position: absolute;
+    content: '';
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 20px;
+    width: 20px;
+    background: #ff0000;
+    border-radius: 50%;
+}
+
+.content_padding {
+    padding: 50px 0px 0px;
+}
+
+/*====================================================================
+Common CSSS
+====================================================================*/
+
+/*=====================================================================
+Header Part Start====================================================*/
+header{
+    position: absolute;
+    min-height: 70px;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 999;
+}
+.logo img {
+	padding: 10px 0px;
+}
+.main-menu{
+    text-align: right;
+}
+.menu .nav-item{
+    display: inline-block;
+    margin-left: 15px;
+}
+
+.menu .nav-item .nav-link{
+    display: block;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 400;
+    padding: 30px 0;
+    transition: 0.3s;
+}
+
+.menu .nav-item .nav-link:hover{
+    color: #ff0000;
+}
+
+.menu .nav-item .nav-link.active {
+	color: #ff0000 !important;
+}
+
+.mobile-menu {
+	display: none;
+}
+
+.mobile-main-menu{
+    display: none;
+}
+
+/*================================================================
+Header Part End=================================================*/
+
+/*================================================================
+Sticky Nav======================================================*/
+
+.sticky-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #000;
+}
+
+.navbar {
+    padding: 0;
+}
+
+.sticky-nav .navbar-brand {
+    padding: 0;
+}
+.sticky-nav .navbar-nav .nav-item .nav-link {
+    padding: 25px 0px;
+}
+
+/*================================================================
+Sticky Nav======================================================*/
+
+/*================================================================
+Home Part Start=================================================*/
+
+.home {
+    background: linear-gradient(rgba(26, 26, 26, 0.6), rgba(26, 26, 26, 0.6)), url('../images/hero-bg.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    min-height: 80vh;
+}
+
+.home_content {
+    padding: 290px 0px 230px;
+    text-align: center;
+}
+
+.home_content h1 {
+    margin-bottom: 30px;
+}
+
+
+.home_content p {
+    font-weight: 400;
+    color: #fff;
+    padding: 0px 0px 70px;
+}
+
+.home_content a {
+    padding: 15px 50px;
+}
+
+/*================================================================
+Home Part End===================================================*/
+/*===============================================================
+About Part Start================================================*/
+
+.about {}
+
+.about_left {
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+}
+
+.about_left img {
+    transition: 0.3s;
+}
+
+.about_left:hover img {
+    transform: rotate(3deg);
+    scale: 1.1;
+}
+
+.about_details {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    z-index: 2;
+    padding: 10px 0px;
+}
+
+.about_details::after {
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(60, 25, 35, 0.75);
+    z-index: -1;
+}
+
+.about_details ul li {
+    display: inline;
+}
+
+.about_details ul li a {
+    display: inline-block;
+    height: 35px;
+    width: 35px;
+    background: #ff0000;
+    border-radius: 50%;
+    text-align: center;
+    margin: 10px 5px;
+    font-size: 15px;
+    color: #fff;
+    line-height: 35px;
+    transition: 0.3s;
+}
+
+.about_details ul li a:hover {
+    background: #fff;
+    color: #000;
+}
+
+
+.about_right h5 {
+    color: #2d2d2d;
+    margin: 30px 0px 25px;
+}
+
+.about_right p {
+    font-weight: 400;
+    color: #2d2d2d;
+    margin-bottom: 25px;
+    line-height: 28px;
+}
+
+.about_right .btn {}
+
+
+/*===============================================================
+About Part End=================================================*/
+/*===============================================================
+Video Part Start===============================================*/
+
+.video_area {
+    background: linear-gradient(rgba(26, 26, 26, 0.6), rgba(26, 26, 26, 0.6)), url('../images/video_area.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+.video_area .video_text h3 {
+    padding-bottom: 30px;
+}
+
+.video_area .video_icon a {
+    font-size: 20px;
+    color: #fff;
+    height: 75px;
+    width: 75px;
+    border: 1px solid #fff;
+    display: inline-block;
+    line-height: 75px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.video_area .video_icon a:hover {
+    background: #fff;
+    color: #464645;
+}
+
+/*===============================================================
+Video Part End=================================================*/
+
+/*===============================================================
+Services Part Start============================================*/
+
+.services {}
+
+.service_item {
+    text-align: center;
+    margin-top: 70px;
+}
+
+.service_item i {
+    color: #ff0000;
+    font-size: 40px;
+}
+
+.service_item h6 {
+    margin: 15px 0px;
+}
+
+.service_item p {
+    font-weight: 400;
+    color: 333333;
+}
+
+/*===============================================================
+Services Part End==============================================*/
+
+/*===============================================================
+Skill Part Start===============================================*/
+
+.skill {
+    background: #f2f2f2;
+}
+
+.skill_left {}
+
+.skill_left h6 {
+    font-size: 24px;
+}
+
+.skill_left p {
+    font-weight: 300;
+    color: #2d2d2d;
+    margin-top: 30px;
+}
+
+.skill_left p:last-child {
+    margin-top: 40px;
+}
+
+.skill_right h6 {
+    font-size: 24px;
+}
+
+.skill_right p {
+    font-weight: 300;
+    color: #2d2d2d;
+}
+
+.skillbar_item {
+    margin-top: 10px;
+}
+
+.skillbar_item .skillbar_title {
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.skillbar_item .skillbar {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    background: #000;
+    height: 16px;
+    border-radius: 30px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.skillbar_item .skillbar-bar {
+	height: 100%;
+	width: 80%;
+	border-radius: 30px;
+	display: inline-block;
+	position: absolute;
+	top: 0;
+    left: 0;
+    background: #ff0000;
+}
+
+.skillbar-bar-2{
+    height: 100%;
+	width: 70%;
+	border-radius: 30px;
+	display: inline-block;
+	position: absolute;
+	top: 0;
+    left: 0;
+    background: #ff0000;
+}
+.skillbar-bar-3{
+    height: 100%;
+	width: 65%;
+	border-radius: 30px;
+	display: inline-block;
+	position: absolute;
+	top: 0;
+    left: 0;
+    background: #ff0000;
+}
+.skillbar-bar-4{
+    height: 100%;
+	width: 50%;
+	border-radius: 30px;
+	display: inline-block;
+	position: absolute;
+	top: 0;
+    left: 0;
+    background: #ff0000;
+}
+
+.skillbar_item .skill-bar-percent {
+    position: absolute;
+    right: 10px;
+    top: 0;
+    font-size: 11px;
+    color: #ffffff;
+}
+
+/*================================================================
+Skill Part End==================================================*/
+
+/*===============================================================
+Counter Area Start=============================================*/
+.counter {
+    background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('../images/counter-bg.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.counter_item a i {
+    height: 50px;
+    width: 50px;
+    font-size: 25px;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    line-height: 50px;
+}
+
+.counter_item span {
+    display: block;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 28px;
+    color: #fff;
+}
+
+.counter_item p {
+    font-weight: 400;
+    color: #fff;
+}
+
+/*===============================================================
+Counter Area End===============================================*/
+
+/*===============================================================
+Portfolio Area Start===========================================*/
+
+.portfolio {}
+
+.portfolio_menu {
+    text-align: center;
+}
+
+.portfolio_menu button {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    color: #0f0f00;
+    background: transparent;
+    border: 0;
+    margin: 0px 15px 15px;
+    transition: 0.2s;
+}
+
+.portfolio_menu .mixitup-control-active {
+    color: #ff0000;
+}
+
+.portfolio_content .portfolio_item {
+    margin-top: 30px;
+    position: relative;
+}
+
+.portfolio_content .portfolio_item .portfolio_item_overlay {
+    position: absolute;
+    background-color: rgba(255, 0, 0, 0.4);
+    left: 0;
+    top: 0;
+    width: 100%;
+    ;
+    height: 100%;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.portfolio_content .portfolio_item:hover .portfolio_item_overlay {
+    opacity: 1;
+}
+
+.portfolio_content .portfolio_item .portfolio_item_overlay .overlay_content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.portfolio_content .portfolio_item .portfolio_item_overlay .overlay_content a i {
+    font-size: 25px;
+    color: #fff;
+}
+
+/*===============================================================
+Portfolio Area End=============================================*/
+
+/*===============================================================
+Team Area Start================================================*/
+
+.team {
+    background: #f2f2f2;
+}
+
+.team_item {
+    position: relative;
+}
+
+.team_item::after {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 0;
+    height: 0;
+    width: 100%;
+    background: rgba(255, 0, 0, 0.6);
+    transition: 0.5s ease;
+}
+
+.team_item:hover::after {
+    height: 100%;
+}
+
+.team_social {
+    position: absolute;
+    bottom: -65px;
+    left: 0;
+    background: #ff0000;
+    width: 100%;
+    text-align: center;
+    transition: 0.5s ease;
+    z-index: 2;
+}
+
+.team_item:hover .team_social {
+    bottom: 0;
+}
+
+.team_social ul {
+    padding: 10px 0px;
+}
+
+.team_social ul li {
+    display: inline;
+}
+
+.team_social ul li h5 {
+    margin-bottom: 10px;
+    transition: 0.3s;
+}
+
+.team_social ul li a {
+    display: inline;
+    margin: 0px 5px;
+}
+
+.team_social ul li a i {
+    font-size: 20px;
+    color: #fff;
+    transition: 0.3s;
+}
+
+.team_social ul li h5:hover {
+    color: #000;
+}
+
+.team_social ul li:hover a i {
+    color: #000;
+}
+
+/*===============================================================
+Team Area End==================================================*/
+
+/*===============================================================
+Testimonial Area Start=========================================*/
+.testimonial {
+    background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url('../images/testimonial-bg.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.testimonial_item {
+    text-align: center;
+}
+
+.testimonial_slide .testimonial_item img {
+    width: auto;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.testimonial_slide .testimonial_item h5 {
+    font-weight: 600;
+    margin: 20px 0px 15px;
+}
+
+.testimonial_slide .testimonial_item p {
+    color: #fff;
+    font-weight: 300;
+}
+
+/*============================================================
+Testimonial Area End========================================*/
+/*============================================================
+Blog Area Start=============================================*/
+.blog_item {
+    overflow: hidden;
+    transition: 0.3s;
+    box-shadow: 0 0 15px #000;
+}
+
+
+.blog_img {
+    border-bottom: 3px solid #ff0000;
+    transition: 0.3s;
+}
+
+.blog_item:hover .blog_img {
+    transform: scaleX(1.1);
+}
+
+.blog_details {
+    padding: 30px 15px;
+}
+
+.blog_details p {
+    margin: 15px 0px;
+}
+
+.blog_btn {
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    color: #fff;
+    font-weight: 300;
+    text-transform: capitalize;
+    padding: 7px 13px;
+    background: #000;
+    border: 2px solid #000;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+.blog_btn:hover {
+    color: #000;
+    background: #fff;
+    border-color: #ff0000;
+}
+
+.blog_comment:hover,
+.blog_comment {
+    font-size: 15px;
+    color: #747474;
+    float: right;
+    margin-top: 10px;
+}
+
+/*===============================================================
+Blog Area End==================================================*/
+
+/*===============================================================
+Contact Area Start=============================================*/
+
+.contact {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/contact-bg.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.contact .section_header h2 {
+    color: #fff
+}
+
+.contact input {
+    background: transparent;
+    height: 45px;
+}
+
+.contact textarea {
+    background: transparent;
+    margin-top: 40px;
+    height: 200px;
+    resize: none;
+}
+
+.form-control::placeholder {
+	color: #fff;
+	opacity: 1;
+}
+
+.form-control:focus {
+    color: #fff;
+    background-color: transparent;
+    border-color: #ff0000;
+    box-shadow: none;
+}
+
+.contact .btn {
+    margin-top: 35px;
+}
+
+/*===============================================================
+Contact Area End===============================================*/
+
+/*===============================================================
+Footer Area End===============================================*/
+
+footer {
+    background: #1a1a1a;
+    padding: 15px;
+}
+
+.footer_icon ul li {
+    display: inline;
+}
+
+.footer_icon ul li a {
+    padding: 10px 5px;
+}
+
+.footer_icon ul li a i {
+    font-size: 15px;
+    color: #fff;
+    transition: 0.3s;
+}
+
+.footer_icon ul li:hover a i {
+    color: #ff0000;
+}
+
+footer p {
+    text-align: right !important;
+    color: #fff;
+}
+
+/*===============================================================
+Footer Area End================================================*/
+
+/*===============================================================
+Top Button=====================================================*/
+#topbtn {
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+    height: 40px;
+    width: 40px;
+    background: #ff0000;
+    border: 0;
+    box-shadow: 0 0 3px #000;
+    display: none;
+    z-index: 999;
+}
+
+#topbtn i {
+    font-size: 25px;
+    color: #fff;
+}
+/*===============================================================
+Top Button=====================================================*/
+
+
+
+
